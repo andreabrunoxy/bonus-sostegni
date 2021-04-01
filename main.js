@@ -5,3 +5,8 @@
 //   $(this).css("top", offset.top + 40 * goY);
 //   $(this).css("left", offset.left + 80 * goX);
 // });
+
+function changeText() {
+  document.getElementById("accettazione").innerHTML =
+    "Grazie per aver declinato l'offerta!";
+}
