@@ -5,6 +5,10 @@ body {
   background-color: rgb(245, 245, 245);
 }
 
+.app {
+  position: relative;
+}
+
 h1 {
   background-color: #005980;
   color: white;
@@ -17,20 +21,19 @@ h2 {
 }
 
 #runner {
+  /*per centrare il div sempre al centro con position absolute
+  impostare il div superiore position: relative, poi top e left 50% 
+  poi margin left -width/2, margin top -height/2; */
   position: absolute;
   width: 120px;
-  height: 45px;
+  height: 40px;
   background-color: red;
   top: 50%;
-  left: 45%;
-  font-size: 30px;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: -22.5px;
+  font-size: 25px;
   font-weight: bold;
   color: white;
   border-radius: 3px;
-}
-
-@media only screen and (max-width: 600px) {
-  #runner {
-    left: 35%;
-  }
 }
