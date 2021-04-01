@@ -25,15 +25,24 @@ h2 {
   impostare il div superiore position: relative, poi top e left 50% 
   poi margin left -width/2, margin top -height/2; */
   position: absolute;
-  width: 120px;
-  height: 35px;
+  width: 160px;
+  height: 50px;
   background-color: red;
   top: 50%;
   left: 50%;
-  margin-left: -60px;
+  margin-left: -80px;
   margin-top: -22.5px;
   font-size: 25px;
   font-weight: bold;
   color: white;
   border-radius: 3px;
+  cursor: pointer;
+}
+
+#runner:hover span {
+  display: none;
+}
+
+button:hover:before {
+  content: "No Grazie";
 }
